@@ -1,25 +1,10 @@
 # 2024_IA651_RSDJ_final_project
 Repository for final project from Rakshith and Dhanumjay 
 
-<H1> TITLE : LOAN DEFALUT PREDICTION  </H1>
+<H1> TITLE : LOAN DEFAULT PREDICTION  </H1>
 <H2> FINAL PROJECT IA651</H2>
 <H4> RAKSHITH AND DHANUMJAY </H4>
 
-
-ABSTRACT 
-OBJECTIVE 
-INTRODUCTION 
-DATA COLLECTION 
-VARIABLES 
-DATA PREPROCESSING 
-DATA ANALYSIS 
-FEATURE ENGINEERING 
-MODEL FITTING 
-MODEL EVALUTION 
-MODEL TUNING 
-RESULTS 
-CONCLUSION 
-FUTURE SCOPE 
 <h4>ABSTRACT</h4>
         <p>In today's fast-paced world, accurate risk assessment is crucial for financial institutions to mitigate potential losses and ensure sustainable growth. This project focuses on developing a robust machine learning model to predict the risk associated with individuals based on various socio-economic and demographic factors. The dataset used comprises detailed information on individuals' <span class="highlight">income, age, experience, marital status, house and car ownership, profession, city, state, current job years,</span> and <span class="highlight">current house years.</span></p>
         <p>The training dataset includes a 'Risk_Flag' which indicates whether an individual is considered a risk or not. By analyzing this dataset, we aim to uncover patterns and relationships between the input features and the risk flag. The test dataset, devoid of the risk flag, is utilized to validate the model's predictive power.</p>
