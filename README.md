@@ -66,14 +66,6 @@ Repository for final project from Rakshith and Dhanumjay
                 <li><strong>Purpose</strong>: The training data is used to develop and train machine learning models aimed at predicting the risk flag based on the provided features.</li>
             </ul>
         </li>
-        <li><strong>Test Data</strong>
-            <ul>
-                <li><strong>Source</strong>: Kaggle</li>
-                <li><strong>Description</strong>: Similar to the training dataset, the test dataset includes comprehensive information on individuals with the same set of features, except for the 'Risk_Flag'. This allows for the assessment of the model's predictive accuracy.</li>
-                <li><strong>Purpose</strong>: The test data is utilized to evaluate and validate the predictive performance and generalizability of the trained models.</li>
-            </ul>
-        </li>
-    </ul>
     <h4>DATA FEATURES</h4>
     <ul>
         <li><strong>Income</strong>: Annual income of the individual.</li>
