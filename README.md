@@ -89,7 +89,8 @@ Repository for final project from Rakshith and Dhanumjay
         <li><strong>Feature Encoding</strong>: Categorical variables were encoded using appropriate methods, and numerical features were normalized to facilitate effective machine learning model training.</li>
     </ul>
     <p>By sourcing and preprocessing the datasets from Kaggle, this project leverages a diverse and comprehensive dataset, thereby enabling the development of robust and accurate machine learning models for risk prediction.</p>
-
+<h4>Data Analysis</h4>
+            <img src="output.png" width="600">
 <h4>Age Distribution</h4>
         <p>The histogram shows the distribution of ages in the dataset, ranging from <span class="highlight">20 to 80 years</span>. The age groups are relatively evenly distributed, with each bin containing around <span class="highlight">20,000 to 25,000 individuals</span>. There's a slight dip in the <span class="highlight">40s and 50s</span> age bins, while the <span class="highlight">60s</span> have the highest count, exceeding 25,000 individuals. This balanced distribution suggests a well-represented dataset across different age groups, though the dip in the 40s and 50s may warrant further investigation.</p>
  <h4>Experience Distribution</h4>
@@ -125,6 +126,7 @@ Repository for final project from Rakshith and Dhanumjay
         </ul>
         <p>This indicates class imbalance, with far more non-risk individuals than risk individuals.</p>
 <h4>Income vs Risk Flag Analysis</h4>
+        <img src="boxplot_1.png" width="600">  
         <p>The box plot shows the distribution of <span class="highlight">income</span> for each <span class="highlight">risk_flag</span> category:</p>
         <ul>
             <li>Median income is similar for both risk (1) and non-risk (0) groups.</li>
@@ -132,6 +134,7 @@ Repository for final project from Rakshith and Dhanumjay
             <li>No significant outliers or differences between the two groups.</li>
         </ul>
         <h4>Age vs Risk Flag Analysis</h4>
+            <img src="boxplot_2.png" width="600">
         <p>The box plot shows the distribution of <span class="highlight">age</span> for each <span class="highlight">risk_flag</span> category:</p>
         <ul>
             <li>Median age is similar for both risk (1) and non-risk (0) groups.</li>
@@ -139,44 +142,19 @@ Repository for final project from Rakshith and Dhanumjay
             <li>No significant outliers or differences between the two groups.</li>
         </ul>
         <h4>Experience vs Risk Flag Analysis</h4>
+            <img src="boxplot_3.png" width="600">
         <p>The box plot shows the distribution of <span class="highlight">experience</span> for each <span class="highlight">risk_flag</span> category:</p>
         <ul>
             <li>Median experience is similar for both risk (1) and non-risk (0) groups.</li>
             <li>Both groups have a similar interquartile range and overall distribution.</li>
             <li>No significant outliers or differences between the two groups.</li>
         </ul>
-        <h4>Current House Years vs Risk Flag Analysis</h4>
-        <p>The box plot shows the distribution of <span class="highlight">current_house_yrs</span> for each <span class="highlight">risk_flag</span> category:</p>
-        <ul>
-            <li>Median house years are similar for both risk (1) and non-risk (0) groups.</li>
-            <li>Both groups have a similar interquartile range and overall distribution.</li>
-            <li>No significant outliers or differences between the two groups.</li>
-        </ul>
-        <h4>Feature Comparison vs Risk Flag Analysis</h4>
-        <p>The subplots compare various features against the <span class="highlight">risk_flag</span>:</p>
-        <ul>
-            <li><span class="highlight">Income</span>: Slightly higher for non-risk individuals across all categories.</li>
-            <li><span class="highlight">Age, Experience, Current Job Years, Current House Years</span>: Similar distributions for both risk and non-risk individuals across all categories.</li>
-            <li><span class="highlight">Marital Status, House Ownership, Car Ownership</span>: No significant difference in risk distribution.</li>
-        </ul>
-        <h4>Risk Flag vs House Ownership Analysis</h4>
-        <p>The bar plot shows the count of <span class="highlight">risk_flag</span> for different <span class="highlight">house_ownership</span> categories:</p>
-        <ul>
-            <li>Most individuals rent their homes.</li>
-            <li>Higher risk (1) is more common among renters compared to owners.</li>
-            <li>Very few individuals fall into the "norent_noown" category.</li>
-        </ul>
-        <h4>Risk Flag vs Car Ownership Analysis</h4>
-        <p>The bar plot shows the count of <span class="highlight">risk_flag</span> for different <span class="highlight">car_ownership</span> categories:</p>
-        <ul>
-            <li>Most individuals do not own a car.</li>
-            <li>Higher risk (1) is more common among non-car owners compared to car owners.</li>
-            <li>The count of non-risk (0) individuals is higher in both categories.</li>
-        </ul>
-        <h4>Risk Flag vs Marital Status Analysis</h4>
-        <p>The bar plot shows the count of <span class="highlight">risk_flag</span> for different <span class="highlight">marital_status</span> categories:</p>
-        <ul>
-            <li>Most individuals are single.</li>
-            <li>Higher risk (1) is more common among single individuals compared to married ones.</li>
-            <li>The count of non-risk (0) individuals is higher in both categories.</li>
-        </ul>
+    <h4>Current Job Years vs Risk Flag Analysis</h4>
+       <img src="boxplot_4.png" width="600">     
+<img src="Current_Job_Years_vs_RiskFlag.png" width="600">
+<p>The box plot shows the distribution of <span class="highlight">current_job_yrs</span> for each <span class="highlight">risk_flag</span> category:</p>
+<ul>
+    <li>Median job years are similar for both risk (1) and non-risk (0) groups.</li>
+    <li>Both groups have a similar interquartile range and overall distribution.</li>
+    <li>No significant outliers or differences between the two groups based on visual inspection.</li>
+</ul>
