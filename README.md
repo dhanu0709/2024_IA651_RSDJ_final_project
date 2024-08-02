@@ -394,3 +394,28 @@ while 'house_ownership' can be one hot encoded and other variables will be targe
 <h4>Feature Importance Analysis</h4>
 <img src = "feature_importance.png" width = "800">
 <p>The bar chart displays the importance of each feature in the Random Forest model. Income and profession are identified as the most influential factors, while other features like marital status and house ownership type have a lesser impact on the model's predictions.</p>
+<h4>Further Feature Reduction and SMOTE Application</h4>
+<p>Additional columns considered less relevant or redundant were dropped from the dataset. SMOTE was applied to the reduced training and test sets to balance the class distribution, generating synthetic samples for the minority class.</p>
+<h4>Random Forest Classifier on Further Reduced SMOTE-Balanced Data</h4>
+<p>A Random Forest Classifier was trained on the further reduced, SMOTE-balanced dataset. The model achieved high accuracy with balanced precision, recall, and F1-scores for both classes, indicating effective classification performance with an overall accuracy of 92%.</p>
+<h4>Confusion Matrix for Random Forest Classifier</h4>
+<img src = "confusionmatrix.jpeg" width = "800">
+<p>The confusion matrix shows that the Random Forest model correctly classified most instances, with a slight number of false positives and false negatives. The model demonstrates strong performance, with high counts in the true positive and true negative quadrants.</p>
+<h4>Random Forest Classifier on Scaled Data</h4>
+<p>A Random Forest Classifier was trained on the scaled dataset with specified parameters, including Gini impurity and a maximum depth of 10. The model achieved an overall accuracy of 88%, with high precision and recall for the non-risk class, but lower performance for the risk class as indicated by the classification report.</p>
+<h4>Hyperparameter Tuning with GridSearchCV</h4>
+<p>GridSearchCV was used to perform an exhaustive search over a defined parameter grid for the Random Forest Classifier. The best model achieved an accuracy of approximately 89.89% on the test set, with the optimal hyperparameters being a maximum depth of 20, using all features, and a minimum of 10 samples per split.</p>
+<h4>Evaluation of Random Forest Classifier on Scaled SMOTE-Balanced Data</h4>
+<p>A Random Forest Classifier was trained on the SMOTE-balanced, scaled dataset with specified parameters. The model's performance on the test set was evaluated, achieving an accuracy score of 89.89%. The classification report provided detailed metrics, including precision, recall, and F1-scores for each class.</p>
+<h4>Adding Predicted Risk Flag to Dataset</h4>
+<p>The predicted risk flags were added to the original dataset as a new column. The predictions, stored in <code>y_pred</code>, were converted into a pandas Series and combined with the existing data, creating a new DataFrame that includes both the original features and the predicted outcomes. This new dataset can be optionally saved to a CSV file for further analysis or reporting.</p>
+<h4>Saving and Loading the Model with Pickle</h4>
+<p>The trained Random Forest model was serialized and saved using the <code>pickle</code> library. The model can be reloaded for future predictions. An example prediction was made using specified input values for features such as income, age, experience, profession, city, state, current job years, and current house years.</p>
+<h4>Conclusion</h4>
+<p>The project successfully developed and evaluated several machine learning models for predicting the risk of loan defaults based on a variety of socio-economic and demographic factors. Through extensive data preprocessing, including handling missing values, encoding categorical variables, scaling numerical features, and applying SMOTE for class balancing, a robust dataset was prepared. Various models, such as Logistic Regression, K-Nearest Neighbors, Gradient Boosting, and Random Forest, were trained and evaluated.</p>
+
+<p>The Random Forest Classifier emerged as one of the best-performing models, achieving a high accuracy and balanced precision-recall scores across both risk and non-risk classes. Hyperparameter tuning using GridSearchCV further optimized the model's performance, identifying the most effective parameter configurations.</p>
+
+<p>This project not only demonstrated the importance of feature selection and engineering but also highlighted the need for careful consideration of class imbalances. The final model, equipped with the ability to accurately predict the risk flag, provides valuable insights for financial institutions, aiding them in making informed decisions and managing risk more effectively.</p>
+
+<p>Future work could explore additional features, more sophisticated modeling techniques, and alternative strategies for handling class imbalance to further enhance predictive performance. Overall, this project sets a strong foundation for risk prediction in the financial domain.</p
