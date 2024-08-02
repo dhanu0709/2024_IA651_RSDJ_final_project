@@ -419,3 +419,4 @@ while 'house_ownership' can be one hot encoded and other variables will be targe
 <p>This project not only demonstrated the importance of feature selection and engineering but also highlighted the need for careful consideration of class imbalances. The final model, equipped with the ability to accurately predict the risk flag, provides valuable insights for financial institutions, aiding them in making informed decisions and managing risk more effectively.</p>
 
 <p>Future work could explore additional features, more sophisticated modeling techniques, and alternative strategies for handling class imbalance to further enhance predictive performance. Overall, this project sets a strong foundation for risk prediction in the financial domain.</p
+<p>hi</p>
